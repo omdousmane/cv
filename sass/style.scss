@@ -1,0 +1,25 @@
+@import "reset";
+@import "base";
+@import "classes";
+@import "animation";
+@import "utils";
+@import "media-queries";
+
+.grid-container {
+  display: grid;
+  grid:
+    "picture header-cv" auto
+    "aside main-cv " 1fr
+    "footer-cv footer-cv" auto
+    / 350px auto;
+  @include xs {
+    display: grid;
+    grid:
+      " header-cv" auto
+      "picture" auto
+      "aside" auto
+      " main-cv" auto
+      "footer-cv" auto
+      / auto;
+  }
+}
