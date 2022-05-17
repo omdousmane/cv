@@ -7,22 +7,19 @@
 @import "media-queries";
 
 .wrapper {
+  width: 100%;
   display: grid;
   grid:
     "header header header header"
     "main main main main"
     "footer footer footer footer";
-  // padding: 10px;
 }
 .width {
-  max-width: calc(100%);
-  width: 474px;
-  height: 570px;
-  // @include xl {
-  //   width: 774px;
-  //   height: 970px;
-  // }
-  // border: 1px solid white;
+  max-width: 100%;
+  width: 50%;
+  @include xs {
+    width: 100%;
+  }
 }
 .text-content {
   padding-right: 40px;
@@ -90,7 +87,6 @@
   flex-direction: column;
   display: flex;
   gap: 10px;
-  // align-content: center;
 
   .line {
     display: flex;
@@ -115,6 +111,9 @@
   flex-direction: column;
   gap: 120px;
   padding-inline: 100px;
+  @include xs {
+    padding-inline: 40px;
+  }
   nav {
     display: flex;
     flex-flow: row nowrap;
@@ -157,19 +156,20 @@
   }
 
   .banner {
-    width: 90%;
+    // width: 90%;
     height: auto;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 60px;
     padding-bottom: 200px;
     @include xs {
+      width: 100%;
       display: flex;
       flex-direction: column-reverse;
       flex-wrap: nowrap;
       justify-content: center;
-      align-items: center;
+      // align-items: center;
       gap: 20px;
       margin: 0 auto;
     }
