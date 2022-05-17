@@ -8,17 +8,17 @@
 .grid-container {
   display: grid;
   grid:
-    "picture header-cv" auto
-    "aside main-cv " 1fr
+    "picture-cv header-cv" auto
+    "aside-cv main-cv " 1fr
     "footer-cv footer-cv" auto
     / 350px auto;
   @include xs {
     display: grid;
     grid:
-      " header-cv" auto
-      "picture" auto
-      "aside" auto
-      " main-cv" auto
+      "header-cv" auto
+      "picture-cv" auto
+      "aside-cv" auto
+      "main-cv" auto
       "footer-cv" auto
       / auto;
   }
@@ -56,8 +56,8 @@
   }
 }
 
-.picture {
-  grid-area: picture;
+.picture-cv {
+  grid-area: picture-cv;
   padding: 6rem;
   background: var(--background);
   border-right: 1px solid var(--border);
@@ -68,8 +68,8 @@
   }
 }
 
-aside {
-  grid-area: aside;
+.aside-cv {
+  grid-area: aside-cv;
   background: var(--background);
   border-right: 1px solid var(--border);
   padding: 5rem;
@@ -206,7 +206,7 @@ aside {
 }
 
 .main-cv {
-  grid-area: main;
+  grid-area: main-cv;
   padding: 5rem;
   @include xs {
     padding: 5rem 1.5rem;
@@ -255,13 +255,13 @@ aside {
 }
 
 .footer-cv {
+  grid-area: footer-cv;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
   color: white;
-  grid-area: footer-cv;
   padding: 5rem;
 
   @include xs {

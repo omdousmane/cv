@@ -8,19 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
   <title>accueil</title>
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
+    <!-- header -->
+    <header class="header">
       <nav>
         <div class="logo">
-          <img src="/img/logo1.svg" alt="logo">
+          <img src="/img/logo2.svg" alt="logo">
         </div>
-        <ul>
+        <ul class="menu">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -31,35 +31,57 @@
             <a href="aboutme.html">About Me</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
-          </li>
-          <li>
             <a href="cv.html">cv</a>
           </li>
+          <button class="btn">
+            <a href="contact.html" id="text">Contact</a>
+          </button>
+
         </ul>
       </nav>
       <div class="banner">
-        <section class="text-content">
-          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+        <section class="text-content width">
+          <h1>Hi! je suis Diallo Ousmane Developpeur Web </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur
             adipisicing elit.
           </p>
-          <button class="btn">
+          <button class="btn-shadow">
             Me contacter
           </button>
         </section>
-        <section class="img-content">
-          <div class="blok"></div>
+        <section class="img-content width">
           <img src="/img/banner.svg" alt="Ousmane">
+          <div class="line">
+            <span></span><span></span><span></span><span></span>
+          </div>
         </section>
       </div>
     </header>
-    <main>
-      <section>section 1</section>
-      <section>section 2</section>
+
+    <!-- main -->
+    <main class="main">
+      <section class="realisation">
+        <div class="text-content decoret-text width">
+          <span class="decoret-h1">Hi! je suis Diallo Ousmane Developpeur Web </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.
+          </p>
+          <button class="btn-shadow">
+            Me contacter
+          </button>
+        </div>
+        <div class="img-content container-left width">
+          <h1>Manger Sain</h1>
+          <img src="/img/xs-phone.svg" alt="realisation phone">
+        </div>
+      </section>
+      <!-- <section>section 2</section> -->
     </main>
-    <footer>
+
+    <!-- footer -->
+    <footer class="footer">
       <footer>
         footer
       </footer>
