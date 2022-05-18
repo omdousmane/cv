@@ -1,0 +1,7 @@
+.menu-xs {
+  display: none;
+  color: var(--text);
+  @include xs {
+    display: flex;
+  }
+}

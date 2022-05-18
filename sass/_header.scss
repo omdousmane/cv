@@ -1,0 +1,83 @@
+.header {
+  width: 100%;
+  background: var(--bg-primary);
+  grid-area: header;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  padding-inline: 100px;
+  gap: 120px;
+  @include xs {
+    padding-inline: 40px;
+  }
+
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+    @include md {
+      padding-inline: 0px;
+    }
+    // border: 1px solid red;
+    .logo {
+      width: 250px;
+      height: 120px;
+      padding-right: 10px;
+      @include xs {
+        width: 400px;
+        height: 120px;
+        object-fit: none;
+        position: relative;
+        img {
+          @include xs {
+            position: absolute;
+            right: 55px;
+            bottom: 23px;
+          }
+        }
+      }
+    }
+    .menu {
+      width: 500px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "kanit";
+      font-size: 20px;
+      font-weight: 400;
+      @include xs {
+        display: none;
+      }
+      button {
+        @include btn();
+        width: 160px;
+        font-family: "Kanit";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        a {
+          font-size: 20px;
+          color: black;
+        }
+
+        @include xs {
+          font-size: 20px;
+          width: 170px;
+        }
+      }
+      button:hover {
+        border: 4px solid var(--btn-primary);
+        background: var(--bg-primary);
+        a {
+          color: var(--text);
+        }
+      }
+    }
+  }
+}

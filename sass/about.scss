@@ -1,0 +1,27 @@
+@import "reset";
+@import "base";
+@import "variables";
+@import "classes";
+@import "animation";
+@import "utils";
+@import "media-queries";
+@import "header";
+@import "xs-header";
+.banner {
+  display: flex;
+  padding-bottom: 100px;
+}
+.width-about {
+  max-width: 100%;
+  width: 50%;
+  height: 500px;
+  @include xs {
+    width: 100%;
+  }
+}
+.img-container {
+  background: #505050;
+}
+.text-content {
+  padding-right: 30px;
+}
